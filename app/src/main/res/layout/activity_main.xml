@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/editBirinciSayi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="112dp"
+        android:ems="10"
+        android:hint="Birinci sayıyı giriniz"
+        android:inputType="numberSigned|textPersonName"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editIkinciSayi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:hint="İkinci sayıyı giriniz"
+        android:inputType="numberSigned|textPersonName"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editBirinciSayi" />
+
+    <Button
+        android:id="@+id/toplaButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="92dp"
+        android:onClick="sonucClick"
+        android:text="+"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.146"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editIkinciSayi" />
+
+    <Button
+        android:id="@+id/cikarButton"
+        android:layout_width="50dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="92dp"
+        android:onClick="sonucClick"
+        android:text="-"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.147"
+        app:layout_constraintStart_toEndOf="@+id/toplaButton"
+        app:layout_constraintTop_toBottomOf="@+id/editIkinciSayi" />
+
+    <Button
+        android:id="@+id/carpButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="92dp"
+        android:onClick="sonucClick"
+        android:text="*"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.642"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editIkinciSayi" />
+
+    <Button
+        android:id="@+id/bolButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="92dp"
+        android:onClick="sonucClick"
+        android:text="/"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.894"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editIkinciSayi" />
+
+    <TextView
+        android:id="@+id/textSonuc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="216dp"
+        android:text="Sonuç:"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/editIkinciSayi"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="@+id/editIkinciSayi"
+        app:layout_constraintTop_toBottomOf="@+id/editIkinciSayi" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
